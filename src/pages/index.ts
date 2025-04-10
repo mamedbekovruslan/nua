@@ -1,3 +1,3 @@
-export * from "./Root";
-export * from "./Home";
-export * from "./About";
+export * from "./Layout/Layout";
+export * from "./Home/Home";
+export * from "./About/About";
