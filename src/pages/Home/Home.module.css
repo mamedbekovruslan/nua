@@ -37,6 +37,22 @@
       border-radius: 50px;
       font-weight: 500;
     }
+
+    #newbie:hover {
+      cursor: pointer;
+      color: white;
+      background-color: rgb(36, 139, 170);
+    }
+
+    #skilled {
+      color: white;
+      background-color: black;
+    }
+    #skilled:hover {
+      cursor: pointer;
+      color: white;
+      background-color: rgb(219, 80, 80);
+    }
   }
   
 }

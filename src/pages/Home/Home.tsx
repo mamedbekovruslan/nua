@@ -9,8 +9,12 @@ export const Home = () => (
         Наш проект нацелен на ваши достижения
       </div>
       <div className={styles.buttonContainer}>
-        <button className={styles.button}>Я новичок</button>
-        <button className={styles.button}>Я опытный</button>
+        <button className={styles.button} id={styles.newbie}>
+          Я новичок
+        </button>
+        <button className={styles.button} id={styles.skilled}>
+          Я опытный
+        </button>
       </div>
     </div>
     <img src={backgroundImg} style={{ filter: "brightness(0.3)" }} />
