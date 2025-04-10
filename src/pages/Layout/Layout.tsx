@@ -3,10 +3,27 @@ import styles from "./Layout.module.css";
 
 export const Root = () => (
   <div>
-    <nav className={styles.nav}>
-      <Link to="/">Главая</Link>
-      <Link to="/about">О нас</Link>
-    </nav>
+    <div className={styles.navbarContainer}>
+      <div className={styles.logo}>NUA</div>
+      <nav className={styles.nav}>
+        <Link className={styles.link} to="/">
+          Главая
+        </Link>
+        <Link className={styles.link} to="/">
+          Гайды
+        </Link>
+        <Link className={styles.link} to="/">
+          Планы
+        </Link>
+        <Link className={styles.link} to="/about">
+          Контакты
+        </Link>
+        <Link className={styles.link} to="/about">
+          О нас
+        </Link>
+      </nav>
+      <div>Админ хуй</div>
+    </div>
     <Outlet />
   </div>
 );

@@ -22,7 +22,22 @@
   }
   
   .description {
-    font-size: 20px;
+    font-size: 25px;
   }
+
+  .buttonContainer {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+
+    button {
+      background-color: white;
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-weight: 500;
+    }
+  }
+  
 }
 

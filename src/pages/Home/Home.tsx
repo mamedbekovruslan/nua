@@ -1,4 +1,4 @@
-import backgroundImg from "../../assets/backgrounds/joe-mcferrin-s6znUip3Mro-unsplash.jpg";
+import backgroundImg from "../../assets/backgrounds/luke-witter-k47w6BeapCs-unsplash.jpg";
 import styles from "./Home.module.css";
 
 export const Home = () => (
@@ -7,6 +7,10 @@ export const Home = () => (
       <div className={styles.title}>Сделай себя сам</div>
       <div className={styles.description}>
         Наш проект нацелен на ваши достижения
+      </div>
+      <div className={styles.buttonContainer}>
+        <button className={styles.button}>Я новичок</button>
+        <button className={styles.button}>Я опытный</button>
       </div>
     </div>
     <img src={backgroundImg} style={{ filter: "brightness(0.3)" }} />
