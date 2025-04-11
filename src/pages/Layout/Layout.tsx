@@ -3,7 +3,7 @@ import styles from "./Layout.module.css";
 
 export const Root = () => (
   <div>
-    <div className={styles.navbarContainer}>
+    <div className={styles.headerContainer}>
       <div className={styles.logo}>NUA</div>
       <nav className={styles.nav}>
         <Link className={styles.link} to="/">
