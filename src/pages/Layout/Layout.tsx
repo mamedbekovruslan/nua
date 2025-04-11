@@ -22,7 +22,7 @@ export const Root = () => (
           О нас
         </Link>
       </nav>
-      <div>Админ хуй</div>
+      <div>Админ</div>
     </div>
     <Outlet />
   </div>

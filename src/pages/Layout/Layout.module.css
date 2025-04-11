@@ -10,6 +10,7 @@
 
   .logo {
     font-size: 44px;
+    user-select: none;
   }
 }
 
