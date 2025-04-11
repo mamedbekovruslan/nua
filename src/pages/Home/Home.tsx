@@ -17,6 +17,6 @@ export const Home = () => (
         </button>
       </div>
     </div>
-    <img src={backgroundImg} style={{ filter: "brightness(0.3)" }} />
+    <img className={styles.img} src={backgroundImg} />
   </div>
 );
