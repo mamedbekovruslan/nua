@@ -1,5 +1,6 @@
 import { Link, Outlet } from "react-router";
 import styles from "./Layout.module.css";
+import { Footer } from "./components";
 
 export const Root = () => (
   <div>
@@ -25,5 +26,6 @@ export const Root = () => (
       <div>Админ</div>
     </div>
     <Outlet />
+    <Footer />
   </div>
 );
