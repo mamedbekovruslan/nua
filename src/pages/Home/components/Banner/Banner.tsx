@@ -1,5 +1,5 @@
-import backgroundImg from "../../../assets/backgrounds/luke-witter-k47w6BeapCs-unsplash.jpg";
-import styles from "../Home.module.css";
+import backgroundImg from "@/assets/backgrounds/luke-witter-k47w6BeapCs-unsplash.jpg";
+import styles from "./Banner.module.scss";
 
 export const Banner = () => {
   return (

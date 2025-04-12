@@ -1,5 +1,5 @@
-import aboutProjectImg from "../../../assets/backgrounds/dane-wetton-t1NEMSm1rgI-unsplash.jpg";
-import styles from "../Home.module.css";
+import aboutProjectImg from "@/assets/backgrounds/dane-wetton-t1NEMSm1rgI-unsplash.jpg";
+import styles from "./Description.module.scss";
 
 export const Description = () => {
   return (
