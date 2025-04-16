@@ -27,9 +27,20 @@
   height: 200px;
   flex: 0 0 calc((100% - 5 * 16px) / 6);
   transition: 0.5s ease;
+  position: relative;
 
   .cardTitle {
     margin-left: 10px;
+  }
+
+  .cardControlBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+    .editBtn {
+      margin-right: 10px;
+    }
   }
 }
 

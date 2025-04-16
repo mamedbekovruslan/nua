@@ -12,7 +12,13 @@ export const Constructor = () => {
           <Icon name="add" size={22} />
           <span className={styles.cardTitle}>Создать</span>
         </div>
-        <div className={styles.programmCard}>Массонабор</div>
+        <div className={styles.programmCard}>
+          <span>Массонабор</span>
+          <div className={styles.cardControlBtn}>
+            <Icon className={styles.editBtn} name="pencil" size={22} />
+            <Icon name="trash" size={22} />
+          </div>
+        </div>
       </div>
     </div>
   );

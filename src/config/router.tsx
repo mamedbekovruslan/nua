@@ -4,6 +4,7 @@ import {
   Route,
 } from "react-router";
 import { About, Constructor, Home, Root } from "../pages";
+import { ConstructorProgramm } from "@/pages/ConstructorProgramm/ConstructorProgramm";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -11,6 +12,7 @@ export const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="constructor" element={<Constructor />} />
+      <Route path="constructor/:programmId" element={<ConstructorProgramm />} />
     </Route>
   )
 );

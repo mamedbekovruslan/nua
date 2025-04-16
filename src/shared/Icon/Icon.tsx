@@ -1,7 +1,11 @@
 import AddIcon from "@/assets/icons/add.svg?react";
+import PencilIcon from "@/assets/icons/pencil.svg?react";
+import TrashIcon from "@/assets/icons/trash.svg?react";
 
 const icons = {
   add: AddIcon,
+  pencil: PencilIcon,
+  trash: TrashIcon,
 };
 
 export type IconName = keyof typeof icons;
