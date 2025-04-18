@@ -5,6 +5,7 @@ import {
 } from "react-router";
 import {
   About,
+  Admin,
   Constructor,
   ConstructorProgramm,
   Contacts,
@@ -24,6 +25,7 @@ export const router = createBrowserRouter(
       <Route path="contacts" element={<Contacts />} />
       <Route path="constructor" element={<Constructor />} />
       <Route path="constructor/:programmId" element={<ConstructorProgramm />} />
+      <Route path="admin" element={<Admin />} />
     </Route>
   )
 );

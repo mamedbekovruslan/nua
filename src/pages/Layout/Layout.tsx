@@ -34,6 +34,9 @@ export const Root = () => {
           <Link className={styles.link} to="/about">
             О нас
           </Link>
+          <Link className={styles.link} to="/admin">
+            Админка
+          </Link>
         </nav>
         <div>Админ</div>
       </div>
