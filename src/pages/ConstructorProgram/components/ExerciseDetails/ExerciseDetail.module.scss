@@ -1,0 +1,57 @@
+@use "@/config/styles/const.module.scss" as *;
+
+.exerciseDetails {
+  flex: 0 1 35%;
+  border-radius: $borderRaius;
+  box-shadow: $boxShadow;
+  background-color: $bgColor;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.exercisePreview {
+  height: 250px;
+  background-color: white;
+  border-radius: $borderRaius;
+  box-shadow: $boxShadow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.exerciseName {
+  font-size: 18px;
+}
+
+.exerciseSets {
+  font-size: 20px;
+}
+
+.weightsRow {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.weightBox {
+  width: 60px;
+  height: 60px;
+  border-radius: $borderRaius;
+  box-shadow: $boxShadow;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.exerciseSteps {
+  font-size: 16px;
+  line-height: 1.4;
+}

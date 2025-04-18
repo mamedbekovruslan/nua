@@ -3,8 +3,7 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router";
-import { About, Constructor, Home, Root } from "../pages";
-import { ConstructorProgramm } from "@/pages/ConstructorProgramm/ConstructorProgramm";
+import { About, Constructor, ConstructorProgramm, Home, Root } from "../pages";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(

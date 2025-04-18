@@ -1,0 +1,53 @@
+@use "@/config/styles/const.module.scss" as *;
+
+.daysSidebar {
+  flex: 0 1 20%;
+  border-radius: $borderRaius;
+  box-shadow: $boxShadow;
+  background-color: $bgColor;
+  padding: 20px;
+}
+
+.daysTitleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.daysTitle {
+  margin: 0;
+}
+
+.infoButton {
+  background-color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $boxShadow;
+}
+
+.dayList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dayItem {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.active {
+  border-radius: $borderRaius;
+  box-shadow: $boxShadow;
+  background-color: white;
+}

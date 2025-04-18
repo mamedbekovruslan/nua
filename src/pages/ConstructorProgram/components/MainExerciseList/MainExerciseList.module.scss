@@ -1,0 +1,44 @@
+@use "@/config/styles/const.module.scss" as *;
+
+.mainContent {
+  flex: 1 1 auto;
+  border-radius: $borderRaius;
+  box-shadow: $boxShadow;
+  background-color: $bgColor;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px;
+}
+
+.exerciseList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exerciseCard {
+  display: flex;
+  gap: 16px;
+  border-radius: $borderRaius;
+  box-shadow: $boxShadow;
+  background-color: white;
+  padding: 12px;
+  align-items: center;
+}
+
+.exerciseImage {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.exerciseTitle {
+  margin-bottom: 4px;
+}
