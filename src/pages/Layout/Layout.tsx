@@ -28,7 +28,7 @@ export const Root = () => {
           <Link className={styles.link} to="/constructor">
             Конструктор
           </Link>
-          <Link className={styles.link} to="/about">
+          <Link className={styles.link} to="/contacts">
             Контакты
           </Link>
           <Link className={styles.link} to="/about">

@@ -5,3 +5,4 @@ export * from "./About/About";
 export * from "./Constructor/Constructor";
 export * from "./ConstructorProgram/ConstructorProgram";
 export * from "./ReadyPrograms/ReadyPrograms";
+export * from "./Contacts/Contacts";
