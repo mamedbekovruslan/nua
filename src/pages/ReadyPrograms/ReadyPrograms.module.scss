@@ -15,9 +15,6 @@
   box-shadow: $boxShadow;
   background-color: $bgColor;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
   overflow-y: auto;
 }
 
@@ -27,29 +24,27 @@
   font-weight: bold;
 }
 
-.categoryList,
-.guideList {
+.categoryList {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
 
-.categoryList li,
-.guideList li {
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 8px;
-  transition: background-color 0.2s;
+  li {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
 
-  &:hover {
-    background-color: white;
+    &:hover {
+      background-color: lighten($bgColor, 10%);
+    }
   }
 }
 
-.guideContent {
+.programsContent {
   flex: 1;
   border-radius: $borderRaius;
   box-shadow: $boxShadow;
@@ -58,21 +53,36 @@
   overflow-y: auto;
 }
 
-.guideTitle {
+.programsTitle {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.paragraph {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
+.programList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-.guideImage {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
+.programCard {
+  background-color: white;
+  padding: 14px 20px;
+  border-radius: $borderRaius;
   box-shadow: $boxShadow;
-  margin: 20px 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: calc(50vh - 120px);
+  transition: background-color 0.2s ease;
+  flex: 0 0 calc((100% - 32px) / 3);
+
+  &:hover {
+    background-color: white;
+  }
 }
