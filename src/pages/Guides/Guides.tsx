@@ -3,7 +3,6 @@ import styles from "./Guides.module.scss";
 export const Guides = () => {
   return (
     <div className={styles.container}>
-      {/* Левая колонка с категориями и гайдами */}
       <aside className={styles.sidebar}>
         <div className={styles.categoriesBlock}>
           <h3 className={styles.blockTitle}>Категории</h3>

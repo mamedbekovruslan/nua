@@ -3,7 +3,7 @@
 .container {
   display: flex;
   gap: 20px;
-  height: 100vh;
+  height: $notFullHeight;
   box-sizing: border-box;
   padding: 20px;
   font-family: sans-serif;
@@ -45,7 +45,7 @@
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: lighten($bgColor, 10%);
+    background-color: $bgColor;
   }
 }
 
