@@ -1,5 +1,7 @@
+@use "@/config/styles/const.module.scss" as *;
+
 .constructorPageContainer {
-  height: 93vh;
+  height: $notFullHeight;
   padding: 20px 30px;
 }
 

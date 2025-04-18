@@ -1,9 +1,11 @@
+@use "@/config/styles/const.module.scss" as *;
+
 .mainContainer {
-  height: 100vh;
+  height: $fullHeight;
 }
 
 .descriptionContainer {
-  height: 100vh;
+  height: $fullHeight;
   display: flex;
   flex-direction: row;
 }
@@ -74,7 +76,7 @@
 
 .bannerImg {
   width: 100%;
-  height: 100vh;
+  height: $fullHeight;
   filter: brightness(0.5);
   object-fit: cover;
 }

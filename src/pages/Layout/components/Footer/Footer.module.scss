@@ -1,5 +1,7 @@
+@use "@/config/styles/const.module.scss" as *;
+
 .footerContainer {
-  height: 100vh;
+  height: $fullHeight;
   background-color: #fff7a6;
   display: flex;
   flex-direction: column;

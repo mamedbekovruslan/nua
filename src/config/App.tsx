@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { RouterProvider } from "react-router";
 import { router } from "./router";
-import styles from "./Loader.module.scss";
+import styles from "./styles/Loader.module.scss";
 
 export const App = () => {
   const [loading, setLoading] = useState(true);

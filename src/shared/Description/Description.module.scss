@@ -1,5 +1,7 @@
+@use "@/config/styles/const.module.scss" as *;
+
 .descriptionContainer {
-  height: 100vh;
+  height: $fullHeight;
   display: flex;
   flex-direction: row;
 }
