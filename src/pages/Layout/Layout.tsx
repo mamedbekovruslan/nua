@@ -1,9 +1,30 @@
 import { Link, Outlet, useLocation } from "react-router";
 import styles from "./Layout.module.css";
 import { Footer } from "./components";
+import { useEffect, useRef, useState } from "react";
 
 export const Root = () => {
   const { pathname } = useLocation();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  const handleItemClick = () => {
+    setIsDropdownOpen(false);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <div>
@@ -38,7 +59,29 @@ export const Root = () => {
             Админка
           </Link>
         </nav>
-        <div>Админ</div>
+        <div className={styles.adminWrapper} ref={dropdownRef}>
+          <button
+            className={styles.adminButton}
+            onClick={() => setIsDropdownOpen((prev) => !prev)}
+          >
+            Админ
+          </button>
+
+          {isDropdownOpen && (
+            <div className={styles.dropdownMenu}>
+              <Link
+                to="/profile"
+                className={styles.dropdownItem}
+                onClick={handleItemClick}
+              >
+                Профиль
+              </Link>
+              <button className={styles.dropdownItem} onClick={handleItemClick}>
+                Выйти
+              </button>
+            </div>
+          )}
+        </div>
       </div>
       <Outlet />
       <Footer />

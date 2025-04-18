@@ -11,6 +11,7 @@ import {
   Contacts,
   Guides,
   Home,
+  Profile,
   ReadyPrograms,
   Root,
 } from "../pages";
@@ -26,6 +27,7 @@ export const router = createBrowserRouter(
       <Route path="constructor" element={<Constructor />} />
       <Route path="constructor/:programmId" element={<ConstructorProgramm />} />
       <Route path="admin" element={<Admin />} />
+      <Route path="profile" element={<Profile />} />
     </Route>
   )
 );
