@@ -1,0 +1,78 @@
+@use "@/config/styles/const.module.scss" as *;
+
+.container {
+  display: flex;
+  gap: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.sidebar {
+  flex: 0 0 250px;
+  border-radius: $borderRaius;
+  box-shadow: $boxShadow;
+  background-color: $bgColor;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow-y: auto;
+}
+
+.blockTitle {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.categoryList,
+.guideList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.categoryList li,
+.guideList li {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: lighten($bgColor, 10%);
+  }
+}
+
+.guideContent {
+  flex: 1;
+  border-radius: $borderRaius;
+  box-shadow: $boxShadow;
+  background-color: $bgColor;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.guideTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.guideImage {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: $boxShadow;
+  margin: 20px 0;
+}
