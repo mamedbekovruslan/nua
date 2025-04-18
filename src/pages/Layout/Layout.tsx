@@ -23,7 +23,7 @@ export const Root = () => {
             Гайды
           </Link>
           <Link className={styles.link} to="/">
-            Планы
+            Программы
           </Link>
           <Link className={styles.link} to="/constructor">
             Конструктор
